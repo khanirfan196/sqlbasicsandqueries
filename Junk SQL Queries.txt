@@ -1,0 +1,8 @@
+select * from all_tab_privs where grantee like '%lendar';
+
+select distinct grantee from all_tab_privs order by grantee asc;
+
+select * from dba_sys_privs where grantee = 'CALENDAR';
+
+select distinct grantee from dba_sys_privs order by grantee asc;
+
